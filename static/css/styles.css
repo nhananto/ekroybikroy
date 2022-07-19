@@ -1,0 +1,338 @@
+body {
+  background: #eeeeee;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sp-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.sp-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.sp-top-80 {
+  padding-top: 80px;
+}
+
+.sp-bottom-100 {
+  padding-bottom: 100px;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #099cec;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+nav.navbar {
+  background-color: #099cec !important;
+  font-size: 14px;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+nav.navbar a.nav-link,
+nav.navbar a.navbar-brand {
+  color: white;
+}
+
+nav.navbar a.navbar-brand {
+  font-weight: bold;
+}
+
+nav.navbar .nav-item {
+  margin: 0px 5px;
+}
+
+nav.navbar .post-btn {
+  padding: 10px 13px !important;
+  text-transform: uppercase;
+  background-color: #f0d455;
+  border-radius: 6px;
+  font-size: 12px;
+  color: black !important;
+}
+
+.search-area {
+  border: 15px solid #e0e0e0;
+}
+
+.search-area .search-field {
+  height: 100%;
+  border: 0px;
+  padding-left: 15px;
+}
+
+.search-area .search-btn {
+  border: 0px;
+  background: #099cec;
+  height: 100%;
+  color: white;
+  padding: 10px;
+}
+
+#post #post-item hr {
+  margin-bottom: 1%;
+}
+
+#post #post-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  height: 200px;
+  width: 200px;
+}
+
+footer {
+  background-color: #212121;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+footer .footer-top .social li {
+  display: inline;
+  margin-right: 10px;
+}
+
+footer .footer-top .download img {
+  width: 150px;
+  margin-left: -11px;
+}
+
+footer .footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 20px;
+}
+
+footer p {
+  margin: 0px;
+}
+
+section.hero .hero-content-wrapper {
+  text-align: center;
+}
+
+section.hero .hero-content-wrapper .title {
+  font-weight: bold;
+}
+
+section.hero .hero-content-wrapper .subtitle {
+  opacity: 0.8;
+  font-size: 13px;
+}
+
+section.hero .featured-category .featured-category-item {
+  background: white;
+  padding: 15px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+  width: 129px;
+}
+
+section.hero .featured-category .featured-category-item img {
+  width: 70px;
+}
+
+section.hero .featured-category .featured-category-item p {
+  margin: 0px;
+}
+
+section.categories {
+  background: #f5f5f5;
+}
+
+section.categories .title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+section.categories .subtitle {
+  font-weight: bold;
+}
+
+section.categories .item {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  margin: 7px;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+section.categories .item:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+section.categories .item a {
+  color: inherit;
+}
+
+section.categories .item .subc:hover {
+  color: #099cec;
+}
+
+.call-to-action {
+  background-color: #e0e0e0;
+}
+
+.call-to-action .ylw-post-btn {
+  background: #e5be45;
+  color: #099cec;
+  font-weight: bold;
+}
+
+.product-detail .sharer {
+  margin: 10px 0px;
+}
+
+.product-detail .sharer .media {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  width: 28px;
+  height: 28px;
+  font-size: 14px;
+  margin-left: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  opacity: 0.7;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+}
+
+.product-detail .sharer .media:hover {
+  background: #eeeeee;
+}
+
+.product-detail .detail-content .sub-heading {
+  font-size: 0.9em;
+  font-weight: 800;
+}
+
+.product-detail .detail-content .description {
+  opacity: 0.9;
+  font-size: 14px;
+}
+
+.product-detail .thumbnail-wrapper {
+  width: 300px;
+  height: 250px;
+}
+
+.product-detail .thumbnail-wrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: "cover";
+     object-fit: "cover";
+}
+
+.product-detail #details p,
+.product-detail #details small {
+  opacity: 0.9;
+  font-size: 14px;
+}
+
+.product-detail #details #details-body hr {
+  margin-top: 0%;
+}
+
+.product-detail #details #details-body img {
+  width: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.product-detail #details #details-user img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  position: center;
+}
+
+.add-post-area .card-title {
+  padding: 15px 15px 15px 15px;
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.add-post-area form input, .add-post-area form textarea, .add-post-area form select {
+  margin: 5px 0px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.add-post-area form input::-webkit-input-placeholder, .add-post-area form textarea::-webkit-input-placeholder, .add-post-area form select::-webkit-input-placeholder {
+  font-size: 14px;
+}
+
+.add-post-area form input:-ms-input-placeholder, .add-post-area form textarea:-ms-input-placeholder, .add-post-area form select:-ms-input-placeholder {
+  font-size: 14px;
+}
+
+.add-post-area form input::-ms-input-placeholder, .add-post-area form textarea::-ms-input-placeholder, .add-post-area form select::-ms-input-placeholder {
+  font-size: 14px;
+}
+
+.add-post-area form input::placeholder, .add-post-area form textarea::placeholder, .add-post-area form select::placeholder {
+  font-size: 14px;
+}
+
+.add-post-area form input:focus, .add-post-area form textarea:focus, .add-post-area form select:focus {
+  border-color: #ced4da;
+}
+
+.add-post-area form label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.add-post-area .subcategory-wrapper {
+  display: none;
+}
+
+.add-post-area .area-wrapper {
+  display: none;
+}
+
+.add-post-area ul.rules {
+  font-size: 14px;
+}
+
+.add-post-area ul.rules li {
+  margin-top: 5px;
+}
+
+.add-post-area ul.rules li:first-child {
+  margin-top: none;
+}
+/*# sourceMappingURL=styles.css.map */

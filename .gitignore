@@ -1,0 +1,13 @@
+.idea
+.vscode
+venv
+allstaticfiles
+schema.txt
+__pycache__
+media
+env.py
+.env
+.env.*
+venv
+*.sqlite3
+tst

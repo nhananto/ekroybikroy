@@ -1,0 +1,78 @@
+{% extends 'main/base.html' %} {% load static %} {% block meta %}
+<title>{{ site_info.name }} | {{ site_info.tagline }}</title>
+{% endblock %} {% block body %}
+<section class="hero sp-80">
+  <div class="container-fluid">
+    <div class="hero-content-wrapper">
+      <h1 class="title">{{ site_info.tagline }}</h1>
+      <p class="subtitle">
+        {{ site_info.sub_tagline }}
+      </p>
+      <div class="row">
+        <div class="col-md-9 mx-auto mt-4">
+          {% include 'main/partials/search.html' %}
+        </div>
+      </div>
+    </div>
+    <div class="featured-category mt-4 pt-2 mx-5">
+      <div class="d-flex justify-content-center">
+        {% for category in categories %} {% if forloop.counter0 < 9 %}
+        <a href="/posts/?category={{ category.id }}" class="mx-2">
+          <div class="featured-category-item">
+            <div class="img">
+              <img src="{% get_media_prefix %}{{ category.thumbnail }}" alt="category" class="img-fluid" />
+            </div>
+            <p>{{ category.name }}</p>
+          </div>
+        </a>
+        {% endif %} {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-4 categories">
+  <div class="container">
+    <h5 class="title">All Categories</h5>
+    <div class="row no-gutters">
+      {% for category in categories %}
+      <div class="col-md-4 mb-3">
+        <div class="p-4 h-100 item">
+          <div class="row">
+            <div class="col-2 img-wrapper">
+              <img src="{% get_media_prefix %}{{ category.thumbnail }}" alt="clothings" class="img-fluid" />
+            </div>
+            <div class="col-10 sub-categories">
+              <h6 class="subtitle">
+                <a href="/posts/?category={{ category.id }}">{{ category.name }}</a>
+              </h6>
+              <ul class="list-unstyled m-0">
+                {% for sub_category in category.subcategory_set.all %}
+                <li><a href="/posts/?sub_category={{ sub_category.id }}" class="subc">{{ sub_category.name }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sp-80 call-to-action">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center">
+        <h4>Do you have something to sell?</h4>
+        <p>Post your ad on {{ site_info.name }}</p>
+        <a href="{% url 'add-post' %}" class="btn ylw-post-btn">Post an ad now!</a>
+      </div>
+      <div class="col-md-6">
+        <img src="{% get_media_prefix %}{{ site_info.logo }}" alt="{{ site_info.name }}"
+          class="img-fluid" style="width: 300px" />
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

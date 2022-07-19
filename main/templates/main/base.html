@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include 'main/partials/meta.html' %}
+
+    {% block meta %}
+    {% endblock %}
+
+    {% include 'main/partials/styles.html' %}
+
+    {% block styles %}
+    {% endblock %}
+</head>
+
+{% if site_info %}
+
+<body>
+    {% include 'main/partials/navbar.html' %}
+
+    {% block body %}
+    {% endblock %}
+
+    {% include 'main/partials/footer.html' %}
+
+    {% include 'main/partials/scripts.html' %}
+
+    {% block scripts %}
+    {% endblock %}
+</body>
+{% else %}
+{% include 'main/setup.html' %}
+{% endif %}
+
+</html>
